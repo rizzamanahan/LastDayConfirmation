@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Izza's Birthday Confirmation ✨</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Quicksand:wght@400;600;700&display=swap');
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;min-height:100vh;font-family:'Quicksand',sans-serif;color:#6f3558;overflow-x:hidden;background:linear-gradient(135deg,#fff0f7 0%,#ffd8ec 35%,#ffc7e4 66%,#fff2c9 100%);}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 15% 20%,rgba(255,255,255,.95) 0 2px,transparent 3px),radial-gradient(circle at 82% 15%,rgba(255,255,255,.85) 0 3px,transparent 4px),radial-gradient(circle at 68% 73%,rgba(255,255,255,.8) 0 2px,transparent 3px),radial-gradient(circle at 25% 80%,rgba(255,248,189,.9) 0 3px,transparent 4px);background-size:130px 130px,180px 180px,150px 150px,210px 210px;animation:twinkle 4s ease-in-out infinite alternate;z-index:0}
+@keyframes twinkle{from{opacity:.35}to{opacity:1}}
+.fairy{position:fixed;font-size:22px;z-index:1;pointer-events:none;animation:float 8s ease-in-out infinite;filter:drop-shadow(0 0 9px #fff)}
+.f1{left:5%;top:14%}.f2{right:7%;top:22%;animation-delay:-2s}.f3{left:10%;bottom:13%;animation-delay:-4s}.f4{right:12%;bottom:10%;animation-delay:-6s}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-8deg)}50%{transform:translateY(-35px) rotate(8deg)}}
+.wrap{position:relative;z-index:2;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:34px 16px}
+.card{width:min(880px,96vw);background:rgba(255,255,255,.74);backdrop-filter:blur(14px);border:2px solid rgba(255,255,255,.85);border-radius:38px;box-shadow:0 25px 80px rgba(181,66,130,.22),0 0 0 8px rgba(255,255,255,.2);padding:34px;display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:center;animation:pop .9s cubic-bezier(.2,.9,.2,1)}
+@keyframes pop{from{opacity:0;transform:translateY(30px) scale(.96)}to{opacity:1;transform:none}}
+.photo-shell{position:relative;padding:10px;border-radius:190px 190px 36px 36px;background:linear-gradient(145deg,#ff5eaa,#ffb4d8,#fff1a8);box-shadow:0 18px 48px rgba(209,61,139,.28);animation:photoGlow 3s ease-in-out infinite alternate}
+@keyframes photoGlow{to{box-shadow:0 20px 60px rgba(255,91,168,.44),0 0 28px rgba(255,239,166,.8)}}
+.photo-shell img{display:block;width:100%;height:500px;object-fit:cover;object-position:center 24%;border-radius:180px 180px 28px 28px;border:5px solid #fff}
+.badge{display:inline-block;background:linear-gradient(90deg,#ff4f9d,#f781bd);color:white;padding:8px 15px;border-radius:999px;font-size:.76rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 8px 20px rgba(255,79,157,.25);animation:pulse 2s infinite}
+@keyframes pulse{50%{transform:scale(1.05)}}
+h1{font-family:'DM Serif Display',serif;font-size:clamp(2.5rem,6vw,4.6rem);line-height:.92;margin:18px 0 12px;color:#ba3d79;font-weight:400;text-shadow:0 2px #fff}
+h1 span{color:#ed4f9a}.deadline{font-family:'DM Serif Display',serif;color:#8e3766;font-size:1.35rem;margin:10px 0 14px}.copy{font-size:1rem;line-height:1.72;margin:0 auto 18px;color:#70405d}.highlight{background:#fff2a9;padding:2px 7px;border-radius:8px;font-weight:700}.love{font-family:'DM Serif Display',serif;font-style:italic;color:#bb467e;font-size:1.15rem;margin:15px 0}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;margin-top:6px;padding:15px 22px;border-radius:999px;color:#fff;text-decoration:none;font-weight:700;background:linear-gradient(90deg,#ff3f91,#ff77b7);box-shadow:0 13px 28px rgba(240,66,145,.34);transition:.22s ease;position:relative;overflow:hidden}.btn:before{content:"";position:absolute;top:-70%;left:-35%;width:28%;height:240%;background:rgba(255,255,255,.5);transform:rotate(25deg);animation:shine 3s infinite}.btn:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 18px 34px rgba(240,66,145,.45)}
+@keyframes shine{0%,60%{left:-40%}100%{left:130%}}
+.note{font-size:.76rem;margin-top:12px;opacity:.75}.hearts{font-size:1.25rem;letter-spacing:5px;margin-top:18px;animation:bob 1.8s ease-in-out infinite}@keyframes bob{50%{transform:translateY(-5px)}}
+.sparkle{position:fixed;pointer-events:none;z-index:5;animation:burst 900ms ease-out forwards}@keyframes burst{to{transform:translate(var(--x),var(--y)) scale(0);opacity:0}}
+@media(max-width:760px){.card{grid-template-columns:1fr;padding:22px;border-radius:28px;gap:24px}.photo-shell{width:min(320px,90%);margin:auto}.photo-shell img{height:420px}.content{text-align:center}h1{font-size:3rem}.wrap{padding:18px 12px}}
+</style>
+</head>
+<body>
+<div class="fairy f1">🧚‍♀️✨</div><div class="fairy f2">✨🦋</div><div class="fairy f3">🌸✨</div><div class="fairy f4">✨💗</div>
+
+<style>
+/* Enchanted Fairyland additions */
+.fairyland-layer{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:1}
+.moon{position:absolute;width:110px;height:110px;right:5%;top:5%;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff,#fff9c9 45%,#ffd8ee 72%);box-shadow:0 0 35px #fff,0 0 75px #ffd5ed;opacity:.92}
+.cloud{position:absolute;font-size:64px;opacity:.35;filter:blur(.2px);animation:cloudMove 24s linear infinite}.c1{top:5%;left:-15%}.c2{top:72%;left:-20%;animation-duration:31s;animation-delay:-12s}@keyframes cloudMove{to{left:110%}}
+.castle{position:absolute;left:50%;bottom:-12px;transform:translateX(-50%);font-size:clamp(110px,18vw,220px);opacity:.11;filter:drop-shadow(0 0 20px #fff)}
+.floatObj{position:absolute;animation:drift 9s ease-in-out infinite;filter:drop-shadow(0 0 8px rgba(255,255,255,.95));will-change:transform}.o1{left:2%;top:35%;font-size:38px}.o2{right:2%;top:42%;font-size:34px;animation-delay:-2s}.o3{left:18%;top:7%;font-size:30px;animation-delay:-4s}.o4{right:20%;bottom:6%;font-size:36px;animation-delay:-5s}.o5{left:4%;bottom:34%;font-size:30px;animation-delay:-7s}.o6{right:5%;bottom:30%;font-size:34px;animation-delay:-3s}.o7{left:31%;bottom:4%;font-size:28px;animation-delay:-6s}.o8{right:34%;top:3%;font-size:30px;animation-delay:-1s}@keyframes drift{0%,100%{transform:translate(0,0) rotate(-7deg)}25%{transform:translate(14px,-22px) rotate(8deg)}50%{transform:translate(-5px,-42px) rotate(-5deg)}75%{transform:translate(-14px,-17px) rotate(7deg)}}
+.jolly-corner{position:fixed;left:15px;bottom:16px;z-index:9998;background:rgba(255,255,255,.84);border:2px solid #ff86bd;border-radius:22px;padding:9px 12px;box-shadow:0 10px 30px rgba(204,49,118,.22);font-weight:800;color:#d53070;font-size:13px;pointer-events:none}.jolly-corner .bee{font-size:30px;display:block;text-align:center;animation:beeBounce 1.8s ease-in-out infinite}.jolly-corner small{display:block;color:#8b4a69;font-size:10px}@keyframes beeBounce{50%{transform:translateY(-5px) rotate(6deg)}}
+.card{box-shadow:0 25px 80px rgba(181,66,130,.25),0 0 60px rgba(255,244,166,.24),0 0 0 8px rgba(255,255,255,.2)}
+</style>
+<div class="fairyland-layer" aria-hidden="true">
+ <div class="moon"></div><div class="cloud c1">☁️ ☁️</div><div class="cloud c2">☁️ ☁️</div><div class="castle">🏰</div>
+ <span class="floatObj o1">🧚‍♀️✨</span><span class="floatObj o2">🧚✨</span><span class="floatObj o3">🦋</span><span class="floatObj o4">🌸</span><span class="floatObj o5">🍄✨</span><span class="floatObj o6">🌷🦋</span><span class="floatObj o7">💖✨</span><span class="floatObj o8">⭐🌙</span>
+</div>
+<div class="jolly-corner"><span class="bee">🐝</span>JOLLY FAIRYLAND<small>Birthday magic at Jollibee ❤️</small></div>
+
+<main class="wrap">
+  <section class="card">
+    <div class="photo-shell"><img src="izza.png" alt="Birthday portrait"></div>
+    <div class="content">
+      <div class="badge">✨ A little birthday reminder ✨</div>
+      <h1>FINAL DAY <span>to RSVP!</span> 💗</h1>
+      <p class="deadline">Tomorrow is the last day to confirm!</p>
+      <p class="copy">Hi, loves! Just a sweet little reminder that <span class="highlight">tomorrow is the final day to let me know if you can attend my birthday celebration.</span> I’m putting together all the final details, and it would mean so much to celebrate this special day with you.</p>
+      <p class="copy">Kindly click the button below to send your confirmation. Whether you’re joining the celebration or won’t be able to make it, your response will help me finalize everything. 💌</p>
+      <p class="love">I’m so excited to see you, make memories, take lots of photos, laugh, eat, and celebrate together in our little pink fairyland! ✨🌸</p>
+      <!-- Replace YOUR_CONFIRMATION_LINK_HERE with your RSVP / birthday invitation link -->
+      <a class="btn" href="https://rizzamanahan.github.io/Izza31Birthday/" target="_blank" rel="noopener">💌 Click Here to Confirm</a>
+      <div class="hearts">💗 ✨ 🎀 ✨ 💗</div>
+      <p class="note">With love, Izza ♡<br>✨ A Jolly Fairyland Birthday at Jollibee ✨</p>
+    </div>
+  </section>
+</main>
+<script>
+document.addEventListener('click',e=>{for(let i=0;i<12;i++){const s=document.createElement('span');s.className='sparkle';s.textContent=['✨','💗','🌸','🎀'][Math.floor(Math.random()*4)];s.style.left=e.clientX+'px';s.style.top=e.clientY+'px';s.style.setProperty('--x',(Math.random()*180-90)+'px');s.style.setProperty('--y',(Math.random()*180-90)+'px');document.body.appendChild(s);setTimeout(()=>s.remove(),900)}});
+</script>
+<!-- Put your MP3 file in the same folder and name it birthday-music.mp3 -->
+<audio id="birthdayMusic" autoplay loop>
+  <source src="birthday-music.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn" aria-label="Toggle music" style="position:fixed;right:22px;bottom:22px;z-index:99999;border:0;border-radius:999px;padding:15px 20px;background:linear-gradient(90deg,#ff3f91,#ff77b7);color:white;font:700 14px Quicksand,sans-serif;box-shadow:0 10px 25px rgba(240,66,145,.35);cursor:pointer;">🎵 PLAY MUSIC</button>
+<script>
+const music=document.getElementById('birthdayMusic');
+const musicBtn=document.getElementById('musicBtn');
+function playMusic(){music.play().then(()=>{musicBtn.textContent='🔊 Music On'}).catch(()=>{musicBtn.textContent='🎵 PLAY MUSIC'})}
+window.addEventListener('load', playMusic);
+document.addEventListener('pointerdown',()=>{if(music.paused) playMusic()},{once:true});
+musicBtn.addEventListener('click',(e)=>{e.stopPropagation();if(music.paused){playMusic()}else{music.pause();musicBtn.textContent='🔇 Music Off'}});
+</script>
+</body>
+</html>
